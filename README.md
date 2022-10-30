@@ -5,7 +5,9 @@ This serves as the main repo for ITSC 204 Assignment 1
 Adeela Nassar  
 Benjamin Day  
 Gurkirat Singh  
+Hasan Al-Taie  
 Kanwarveerpratap Singh  
+Monik Narshibhai Nakrani  
 Lubos Kuzma (https://www.linkedin.com/in/lubos-kuzma-0719a586)  
 Saiban Muhammad  
 
@@ -18,11 +20,11 @@ Saiban Muhammad
 
 ## ARM Toolchain:
 - ~~add Raspberry Pi 3B or 4 (selection through arguments)~~
-- add 64bit system option
+- ~~add 64bit system option~~
 
 ## General:
 - ~~improvements to arguments structure/parsing~~
-- annotate every line - ~~x86~~ / ARM
+- ~~annotate every line - x86 / ARM~~
 - create documentation
 - general improvements to Help (no arguments)
 - general improvements to arguments
