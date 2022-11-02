@@ -8,7 +8,8 @@ Gurkirat Singh
 Hasan Al-Taie  
 Kanwarveerpratap Singh  
 Monik Narshibhai Nakrani  
-Lubos Kuzma (https://www.linkedin.com/in/lubos-kuzma-0719a586)  
+Lubos Kuzma (https://www.linkedin.com/in/lubos-kuzma-0719a586)
+Nathaniel Pawluk 
 Saiban Muhammad  
 
 
