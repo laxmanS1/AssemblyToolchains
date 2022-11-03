@@ -1,11 +1,24 @@
 #! /bin/bash
+# @file ARM_toolchain: Documentation
 
-# Created by Lubos Kuzma
-# ISS Program, SADT, SAIT
-# August 2022
+# @description Created by Lubos Kuzma,ISS Program, SADT, SAIT 
+#  * First stage of program toolchain will help run script on terminal.
+#  * Secondly , default values is  applied for various arguments such as port , GDB,Verbose,Bits,breakpoint, GDB and others if user do not specify
+#  * Next step is using if statement to loop through all the above defined conditions to check the parameters entered by users.
+#  * restore positional parameters entered by user
+#  * If user entered file dose not exist in current directory then it will  show error messenge and exit 
+#  * In next step,if statement is used to loop through conditions to check each parameters and give the output. If Verbose mode is set for true then it will show the details for all the options.
+#  * Finally, if condition is used for compiling ARM64 assembly/QEMU/run and various other parameters.
+#  * At the end , if user enters both options for GDB and QEMU then it will show the message that QEMU and GDB can not be run together and it will run QEMU.
 
 
-if [ $# -lt 1 ]; then    # it will show the usage of the toolchain
+
+
+
+
+
+
+if [ $# -lt 1 ]; then    # it will show the usage of the toolchain  
         echo "Usage:"
         echo ""
         echo "arm_toolchain.sh  [-p | --port <port number, default 12222>] <assembly filename> [-o | --output <output filename>]"
@@ -23,7 +36,7 @@ if [ $# -lt 1 ]; then    # it will show the usage of the toolchain
 
         exit 1
 fi
-  # Below are the default values and these will be applied if user do not specify
+  #  Below are the default values and these will be applied if user do not specify
 POSITIONAL_ARGS=()
 GDB=False
 OUTPUT_FILE=""
@@ -90,6 +103,9 @@ while [[ $# -gt 0 ]]; do  # This loop will check for options entered by the user
 done
 
 set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
+
+
+
 
 if [[ ! -f $1 ]]; then # if user entered file dose not exist in current directory then it will  show this messeng and exit
         echo "Specified file does not exist"
@@ -193,6 +209,7 @@ else    #if the user enters both options for GDB and QEMU then it will show the 
 
         qemu-arm $OUTPUT_FILE && echo "" #command to initiate QEMU
         exit 0
+
 
 fi
 
